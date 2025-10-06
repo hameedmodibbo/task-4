@@ -7,75 +7,154 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Hamid Adamu</h1>
-      <p>Front-End Developer | Web Designer | Creative Thinker</p>
+  <header class="top-nav">
+    <div class="nav-inner">
+      <div class="logo">Hamid</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Hire Me</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Hire Me</a></li>
-    </ul>
-  </nav>
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Hamid Adamu</h1>
+      <p>Front-End Developer | Web Designer | Creative Thinker</p>
+    </div>
+  </section>
 
-  <main>
-    <section id="about" class="flex-section">
-      <div class="text-box">
-        <h2>About Me</h2>
-        <p>Hello! I'm Hamid, a passionate web developer who loves creating beautiful, responsive websites using modern web technologies. I enjoy solving real-world problems through design and code.</p>
-      </div>
-      <div class="image-box">
-        <img src="https://via.placeholder.com/400x300" alt="Hamid Adamu photo">
+    <main>
+      <section id="about" class="flex-section about-senior">
+        <div class="text-box">
+          <h2 style="text-align: start;">About Me</h2>
+          <h3 class="role">Senior Front-End Developer</h3>
+          <p class="lead">I build high-performance, accessible, and maintainable web applications. With 8+ years of experience delivering production-ready front-ends, I lead teams, design systems, and ship features that scale.</p>
+
+          <ul class="highlights">
+            <li>Led a team of 4 front-end engineers on a large e-commerce platform.</li>
+            <li>Designed and implemented a component library used across multiple products.</li>
+            <li>Improved page load performance by 40% through auditing and refactoring.</li>
+          </ul>
+
+          <div class="skills">
+              <span class="skill">Tailwind CSS</span>
+              <span class="skill">CSS-in-JS</span>
+              <span class="skill">JavaScript (ES6+)</span>
+              <span class="skill">Accessibility</span>
+          </div>
+
+          <div class="about-cta">
+            <a href="#contact" class="button">Work with me</a>
+          </div>
+        </div>
+        <div class="image-box">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=700&q=80" alt="developer laptop setup">
+        </div>
+      </section>
+
+    <section id="services">
+      <h2>Services</h2>
+      <p class="section-intro">I provide a range of services from visual web design to secure development and security audits. Choose what fits your needs.</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <!-- Web Design Icon -->
+          <div class="service-icon" aria-hidden="true">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="4" width="18" height="14" rx="2" stroke="#12233a" stroke-width="1.5" fill="#eaf2ff"/>
+              <path d="M3 12h18" stroke="#0056b3" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <h3>Web Design</h3>
+          <p>Beautiful, responsive UI/UX design focused on clarity and conversion.</p>
+        </div>
+
+        <div class="service-card">
+          <!-- Web Development Icon -->
+          <div class="service-icon" aria-hidden="true">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 6h16M4 12h16M4 18h16" stroke="#12233a" stroke-width="1.5" stroke-linecap="round"/>
+              <rect x="3" y="4" width="18" height="16" rx="2" stroke="#e6eefb" fill="#fff" opacity="0"/>
+            </svg>
+          </div>
+          <h3>Web Development</h3>
+          <p>Modern, performant front-end development using best practices.</p>
+        </div>
+
+        <div class="service-card">
+          <!-- Cyber Security Icon -->
+          <div class="service-icon" aria-hidden="true">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2l7 4v5c0 5-3 8-7 11-4-3-7-6-7-11V6l7-4z" stroke="#12233a" stroke-width="1.2" fill="#e9f7ef"/>
+              <circle cx="12" cy="12" r="2" fill="#0056b3"/>
+            </svg>
+          </div>
+          <h3>Cyber Security</h3>
+          <p>Security-focused audits and recommendations to protect your web assets.</p>
+        </div>
       </div>
     </section>
 
     <section id="projects">
       <h2>Projects</h2>
+      <p class="section-intro">Here are some selected projects that showcase responsive design, front-end development and creative UI work.</p>
       <div class="project-grid">
-        <div class="project-card">Portfolio Website</div>
-        <div class="project-card">E-commerce Landing Page</div>
-        <div class="project-card">CSS Animations Demo</div>
+        <article class="project-card">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=60" alt="Portfolio project screenshot">
+          <h3>Portfolio Website</h3>
+          <p>A responsive portfolio built with HTML, CSS and modern layout techniques.</p>
+        </article>
+
+        <article class="project-card">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=60" alt="E-commerce landing screenshot">
+          <h3>E-commerce Landing Page</h3>
+          <p>High-conversion landing page for an online store with clean UI.</p>
+        </article>
+
+        <article class="project-card">
+          <img src="https://images.unsplash.com/photo-1505685296765-3a2736de412f?auto=format&fit=crop&w=800&q=60" alt="CSS animations demo">
+          <h3>CSS Animations Demo</h3>
+          <p>Interactive CSS animations and micro-interactions showcase.</p>
+        </article>
       </div>
     </section>
 
-    <section id="contact">
-      <h2>Hire Me</h2>
-      <form action="thankyou.html" method="post">
-        <label>Full Name:</label>
-        <input type="text" name="name" required>
+    <section id="contact" class="hire-section">
+      <div class="hire-header">
+        <h2>Hire Me</h2>
+        <p>Tell me briefly about your project — a short summary is fine. I'll get back with an estimate and timeline.</p>
+      </div>
 
-        <label>Email Address:</label>
-        <input type="email" name="email" required>
+      <div class="hire-grid">
+        <div class="hire-image">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1526378723456-43012a7e1a3e?auto=format&fit=crop&w=800&q=60" alt="work desk">
+        </div>
 
-        <label>Phone Number:</label>
-        <input type="tel" name="phone" required>
+        <form class="hire-form" action="thankyou.html" method="post">
+          <label>Full Name</label>
+          <input type="text" name="name" required>
 
-        <label>Company/Organization:</label>
-        <input type="text" name="company">
+          <label>Email Address</label>
+          <input type="email" name="email" required>
 
-        <label>Project Type:</label>
-        <select name="project_type" required>
-          <option>Website Design</option>
-          <option>Frontend Development</option>
-          <option>UI/UX Design</option>
-          <option>Consultation</option>
-        </select>
+          <label>Project Type</label>
+          <select name="project_type" required>
+            <option>Website Design</option>
+            <option>Frontend Development</option>
+            <option>UI/UX Design</option>
+            <option>Consultation</option>
+          </select>
 
-        <label>Preferred Budget:</label>
-        <input type="number" name="budget" placeholder="₦">
+          <label>Brief Summary</label>
+          <textarea name="message" rows="4" placeholder="One or two sentences about the project" required></textarea>
 
-        <label>Deadline:</label>
-        <input type="date" name="deadline">
-
-        <label>Additional Details:</label>
-        <textarea name="message" rows="4" placeholder="Describe your project..."></textarea>
-
-        <button type="submit">Submit Request</button>
-      </form>
+          <button type="submit">Request Quote</button>
+        </form>
+      </div>
     </section>
   </main>
 
