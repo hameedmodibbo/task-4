@@ -1,0 +1,188 @@
+/* === General Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* === Header === */
+header {
+  background: #0056b3;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+/* === Navigation === */
+nav {
+  background: #003d80;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0.8rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.7rem 1.5rem;
+  font-weight: 500;
+}
+
+nav a:hover {
+  background: #004a99;
+  border-radius: 5px;
+}
+
+/* === About Section (Flexbox) === */
+.flex-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 10%;
+  background: white;
+}
+
+.flex-section img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* === Projects Grid === */
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 3rem 10%;
+}
+
+.project-card {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* === Form Section === */
+form {
+  background: white;
+  padding: 2rem 3rem;
+  margin: 3rem 10%;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 1.5rem;
+  background: #0056b3;
+  color: white;
+  border: none;
+  padding: 0.9rem 1.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button:hover {
+  background: #003d80;
+}
+
+/* === Thank You Page === */
+.thankyou-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.thankyou-box {
+  background: white;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background: #0056b3;
+  color: white;
+  text-decoration: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+}
+
+.back-btn:hover {
+  background: #004080;
+}
+
+/* === Footer === */
+footer {
+  background: #003d80;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+/* === Responsive Design === */
+@media (max-width: 1024px) {
+  .flex-section {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .project-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form {
+    margin: 2rem;
+    padding: 1.5rem;
+  }
+}

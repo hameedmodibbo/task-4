@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamid Adamu - Web Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Hamid Adamu</h1>
+      <p>Front-End Developer | Web Designer | Creative Thinker</p>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Hire Me</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about" class="flex-section">
+      <div class="text-box">
+        <h2>About Me</h2>
+        <p>Hello! I'm Hamid, a passionate web developer who loves creating beautiful, responsive websites using modern web technologies. I enjoy solving real-world problems through design and code.</p>
+      </div>
+      <div class="image-box">
+        <img src="https://via.placeholder.com/400x300" alt="Hamid Adamu photo">
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">Portfolio Website</div>
+        <div class="project-card">E-commerce Landing Page</div>
+        <div class="project-card">CSS Animations Demo</div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Hire Me</h2>
+      <form action="thankyou.html" method="post">
+        <label>Full Name:</label>
+        <input type="text" name="name" required>
+
+        <label>Email Address:</label>
+        <input type="email" name="email" required>
+
+        <label>Phone Number:</label>
+        <input type="tel" name="phone" required>
+
+        <label>Company/Organization:</label>
+        <input type="text" name="company">
+
+        <label>Project Type:</label>
+        <select name="project_type" required>
+          <option>Website Design</option>
+          <option>Frontend Development</option>
+          <option>UI/UX Design</option>
+          <option>Consultation</option>
+        </select>
+
+        <label>Preferred Budget:</label>
+        <input type="number" name="budget" placeholder="₦">
+
+        <label>Deadline:</label>
+        <input type="date" name="deadline">
+
+        <label>Additional Details:</label>
+        <textarea name="message" rows="4" placeholder="Describe your project..."></textarea>
+
+        <button type="submit">Submit Request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Hamid Adamu. All rights reserved.</p>
+  </footer>
+</body>
+</html>
